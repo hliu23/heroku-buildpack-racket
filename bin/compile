@@ -97,6 +97,7 @@ echo 'export PATH=$PATH:$HOME/racket/bin' >> .profile.d/setup_environment.sh
 
 echo "-----> Installing application package"
 
+cd app/
 # sudo apt-get install libssl-dev
 raco pkg install --no-setup --deps search-auto -n heroku-racket-app --copy $APP_DIR |& indent
 raco pkg show -a
