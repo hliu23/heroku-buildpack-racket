@@ -70,9 +70,9 @@ RACKET_DIR=$BUILD_DIR/racket
 
 cd $BUILD_DIR
 
-ls -la
+# ls -la
 
-echo "-----> Moving application into ‘app’ directory"
+# echo "-----> Moving application into ‘app’ directory"
 
 # mkdir -p $APP_DIR
 # mv $BUILD_DIR/!(app|Procfile) $APP_DIR/
@@ -95,10 +95,8 @@ echo "-----> Setting up environment"
 mkdir .profile.d
 echo 'export PATH=$PATH:$HOME/racket/bin' >> .profile.d/setup_environment.sh
 
-echo "-----> Installing application package"
+# echo "-----> Installing application package"
 
-cd app/
-# sudo apt-get install libssl-dev
-raco pkg install --no-setup --deps search-auto -n heroku-racket-app --copy $APP_DIR |& indent
-raco pkg show -a
-raco setup -DK --fail-fast |& indent
+# raco pkg install --no-setup --deps search-auto -n heroku-racket-app --copy $APP_DIR |& indent
+# raco pkg show -a
+# raco setup -DK --fail-fast |& indent
