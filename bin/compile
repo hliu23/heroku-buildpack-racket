@@ -70,10 +70,12 @@ RACKET_DIR=$BUILD_DIR/racket
 
 cd $BUILD_DIR
 
+ls -la
+
 echo "-----> Moving application into ‘app’ directory"
 
-mkdir -p $APP_DIR
-mv $BUILD_DIR/!(app|Procfile) $APP_DIR/
+# mkdir -p $APP_DIR
+# mv $BUILD_DIR/!(app|Procfile) $APP_DIR/
 
 echo "-----> Building Racket installation"
 echo "     - Downloading prebuilt installer"
