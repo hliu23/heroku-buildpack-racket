@@ -2,7 +2,7 @@
 
 BUILD_DIR=$1
 
-if [ -f $BUILD_DIR/app/info.rkt ]; then
+if [ -f $BUILD_DIR/app/server.rkt ]; then
   echo "Racket" && exit 0
 else
   echo "Failed to locate ‘info.rkt’ file."
